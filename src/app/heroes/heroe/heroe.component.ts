@@ -27,6 +27,7 @@ export class HeroeComponent {
   }
   cambiarMayuscula():void{
     this.Mayuscula = 'SUPERMAN';
+
   }
 
 

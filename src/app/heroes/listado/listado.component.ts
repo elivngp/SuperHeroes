@@ -6,9 +6,21 @@ import { Component} from '@angular/core';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent {
-  heroes: string[] = ['HULK', 'SAITAMA', 'SUPERMAN', 'THOR', 'GOKU'];
-  heroeBorrado = '';
-  borrarHeroe(): void {
-      this.heroeBorrado = this.heroes.shift() || '' ;
+
+
+
+  heroes: string[] = ['hulk','Saitama','Superman','Thor','Goku'];
+  eliminar: string[] = [] ;
+  acumulador:number = 5;
+  indice:number = 0;
+
+
+  removeItem(i: number){
+
+    this.acumulador = this.acumulador--;
+    this.indice=this.indice+i;
+    this.eliminar = this.heroes.splice(i,1);
+
+
   }
 }
