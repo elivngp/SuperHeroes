@@ -1,20 +1,14 @@
-import { removeSummaryDuplicates, ThrowStmt, splitClasses } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
-
   selector: 'app-listado',
   templateUrl: './listado.component.html',
   styleUrls: ['./listado.component.css']
 })
-export class ListadoComponent{
-
-  heroes: string[] = ['HULK','SAITAMA','SUPERMAN','GOKU'];
-  eliminar: string[]  = [];
-  indice:number = 0;
-  removeItem(i: number){
-
-    this.indice=this.indice+i;
-    this.eliminar = this.heroes.splice(i,1);
+export class ListadoComponent {
+  heroes: string[] = ['HULK', 'SAITAMA', 'SUPERMAN', 'THOR', 'GOKU'];
+  heroeBorrado = '';
+  borrarHeroe(): void {
+      this.heroeBorrado = this.heroes.shift() || '' ;
   }
 }
