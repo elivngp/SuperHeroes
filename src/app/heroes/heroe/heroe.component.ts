@@ -11,22 +11,22 @@ import { Component } from '@angular/core';
 
 export class HeroeComponent {
 
-  nombre: string = 'Saitama';
-  edad: number = 30;
-  Mayuscula: string = 'SAITAMA';
+  nombre: string = 'Frank Ocean';
+  edad: number = 29;
+  Mayuscula: string = 'FRANK OCEAN';
 
   ontenerNombre():string{
     return this.nombre + ' - ' + this.edad + ' - ' + this.Mayuscula;
   }
 
   cambiarNombre():void{
-    this.nombre = 'Superman';
+    this.nombre = 'Kanye West';
   }
   cambiarEdad():void{
     this.edad = 38;
   }
   cambiarMayuscula():void{
-    this.Mayuscula = 'SUPERMAN';
+    this.Mayuscula = 'KANYE WEST';
 
   }
 

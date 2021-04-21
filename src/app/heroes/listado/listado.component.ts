@@ -9,7 +9,7 @@ export class ListadoComponent {
 
 
 
-  heroes: string[] = ['hulk','Saitama','Superman','Thor','Goku'];
+  heroes: string[] = ['A$AP ROCKY','JAY Z','KID CUDI','','DRAKE'];
   eliminar: string[] = [] ;
   acumulador:number = 5;
   indice:number = 0;
