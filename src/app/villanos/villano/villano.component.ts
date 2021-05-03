@@ -4,19 +4,18 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector:'app-heroe',
-  templateUrl:'./heroe.component.html',
-  styleUrls:['./heroe.component.css']
+  selector:'app-villano',
+  templateUrl:'./villano.component.html',
+  styleUrls:['./villano.component.css']
 })
 
-export class HeroeComponent {
+export class VillanoComponent {
 
-  nombre: string = 'Frank Ocean';
+  nombre: string = 'Tyler';
   edad: number = 33;
-  Mayuscula: string = 'FRANK OCEAN';
-  SP: string = 'blond';
+  Mayuscula: string = 'TYLER';
+  SP: string = 'rap';
   AP: number = 0;
-
 
   ontenerNombre():string{
     return this.nombre + ' - ' + this.edad + ' - ' + this.Mayuscula + ' - ' + this.SP + '-' + this.AP + '-' + this.AP + '-' + this.AP + '-' + this.AP + '-' + this.AP + '-' + this.AP + '-' + this.AP + '-' + this.AP + '-' + this.AP + '-' + this.AP;

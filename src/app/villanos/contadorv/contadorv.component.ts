@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contador',
-  templateUrl: './contador.component.html',
-  styleUrls: ['./contador.component.css']
+  selector: 'app-contadorv',
+  templateUrl: './contadorv.component.html',
+  styleUrls: ['./contadorv.component.css']
 })
 export class ContadorComponent implements OnInit {
 
 
-  title = 'SUPER PODER';
+  title = 'CONTADOR';
   numero = 10;
   base = 5;
   constructor() { }
